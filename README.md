@@ -48,12 +48,11 @@
 
 ## ✅ Example Command
 
-\`\`\`bash
-python3 Mark_newick.py \
+```python3 Mark_newick.py \
     -i /cfs/klemming/projects/supr/snic2022-6-144/BENJAMIN/NATHAN/Tree.nwk \
     -l red \
     -o /cfs/klemming/projects/supr/snic2022-6-144/BENJAMIN/NATHAN/Tree_marked.nwk
-\`\`\`
+```
 
 ---
 
