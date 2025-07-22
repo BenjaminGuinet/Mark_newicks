@@ -63,7 +63,6 @@ python3 Mark_newick.py \
 ## 📥 Example Output
 
 \`\`\`
-/cfs/klemming/projects/supr/snic2022-6-144/BENJAMIN/My_conda/lib/python3.12/site-packages/ete3/evol/evoltree.py:86: UserWarning: A NumPy version >=1.23.5 and <2.3.0 is required for this version of SciPy (detected version 2.3.1)
 
 Loading tree from: /path/to/Tree.nwk
 
