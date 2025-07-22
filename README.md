@@ -35,8 +35,6 @@
 Using **conda**:
 
 ```bash
-conda create -n mark_newick_env python=3.12
-conda activate mark_newick_env
 pip install ete3 numpy scipy==1.11.4
 
 ## 🚀 Usage
