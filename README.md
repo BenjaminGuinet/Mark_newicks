@@ -32,8 +32,6 @@
 
 ## 🔧 Installation
 
-Using **conda**:
-
 ```bash
 pip install ete3 numpy scipy==1.11.4
 
