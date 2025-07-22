@@ -32,14 +32,11 @@
 
 ## 🔧 Installation
 
-```bash
-pip install ete3 numpy scipy==1.11.4```
+```pip install ete3 numpy scipy==1.11.4```
 
 ## 🚀 Usage
 
-\`\`\`bash
-python3 Mark_newick.py -i <input_tree> -l <label> -o <output_tree>
-\`\`\`
+```python3 Mark_newick.py -i <input_tree> -l <label> -o <output_tree>```
 
 ## 📌 Arguments
 
@@ -62,7 +59,7 @@ python3 Mark_newick.py \
 
 ## 📥 Example Output
 
-\`\`\`
+```
 
 Loading tree from: /path/to/Tree.nwk
 
@@ -80,7 +77,7 @@ Nodes marked: [36, 29, 30, 31]
 
 Writing marked tree to: /path/to/Tree_marked.nwk
 Process complete.
-\`\`\`
+```
 
 ---
 
