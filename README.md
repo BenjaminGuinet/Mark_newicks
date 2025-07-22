@@ -33,7 +33,7 @@
 ## 🔧 Installation
 
 ```bash
-pip install ete3 numpy scipy==1.11.4
+pip install ete3 numpy scipy==1.11.4```
 
 ## 🚀 Usage
 
@@ -41,7 +41,7 @@ pip install ete3 numpy scipy==1.11.4
 python3 Mark_newick.py -i <input_tree> -l <label> -o <output_tree>
 \`\`\`
 
-### 📌 Arguments
+## 📌 Arguments
 
 | Argument | Description                         |
 |----------|-------------------------------------|
@@ -49,7 +49,7 @@ python3 Mark_newick.py -i <input_tree> -l <label> -o <output_tree>
 | \`-l\`     | Label (substring) to search for.    |
 | \`-o\`     | Path to the output Newick file.     |
 
-### ✅ Example Command
+## ✅ Example Command
 
 \`\`\`bash
 python3 Mark_newick.py \
