@@ -90,6 +90,7 @@ Process complete.
 
 
 ## Use output for HyPhy dN/dS analysis : 
-
-Eg usage : hyphy absrel --alignment your_file.ali --tree Tree_marked.nwk --test test 
+```
+Eg usage : hyphy absrel --alignment your_file.ali --tree Tree_marked.nwk --test test
+```
 ---
