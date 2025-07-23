@@ -88,4 +88,8 @@ Process complete.
   - The MRCA and all descendant nodes of the label provided are marked by appending \`#1\`.
   - The structure of the tree remains unchanged aside from these markings and removing of boostraps.
 
+
+## Use output for HyPhy dN/dS analysis : 
+
+Eg usage : hyphy absrel --alignment your_file.ali --tree Tree_marked.nwk --test test 
 ---
