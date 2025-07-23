@@ -91,6 +91,8 @@ Process complete.
 
 ## Use output for HyPhy dN/dS analysis : 
 ```
-Eg usage : hyphy relax --alignment your_file.ali --tree Tree_marked.nwk --test test
+Eg usage :
+- hyphy relax --alignment your_file.ali --tree Tree_marked.nwk --test test
+- hyphy busted --alignment your_file.al --tree Tree_marked.nw --branches test 
 ```
 ---
