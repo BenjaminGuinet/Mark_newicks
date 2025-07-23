@@ -11,7 +11,7 @@ def main():
     parser.add_argument('-m', '--midpoint_root', action='store_true', help='Midpoint root the tree before marking')
 
     # Example usage:
-    # python3 Mark_newick.py -i input_tree.nwk -l artic -o output_tree_marked.nwk
+    # python3 Mark_newick.py -i input_tree.nwk -l artic -o output_tree_marked.nwk -m
 
     args = parser.parse_args()
 
