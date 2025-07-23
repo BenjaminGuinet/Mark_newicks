@@ -8,9 +8,11 @@ def main():
     parser.add_argument('-i', '--input_tree', required=True, help='Input tree file in Newick format')
     parser.add_argument('-l', '--label', required=True, help='Label substring to search within leaf names')
     parser.add_argument('-o', '--output_tree', required=True, help='Output file for the marked tree in Newick format')
+    parser.add_argument('-m', '--midpoint_root', action='store_true', help='Midpoint root the tree before marking')
+
     # Example usage:
     # python3 Mark_newick.py -i input_tree.nwk -l artic -o output_tree_marked.nwk
-    
+
     args = parser.parse_args()
 
     print(f"\nLoading tree from: {args.input_tree}")
@@ -20,13 +22,21 @@ def main():
     print(tree)
     print("\n")
 
+    if args.midpoint_root:
+        print("\nMidpoint rooting the tree...")
+        R = tree.get_midpoint_outgroup()
+        tree.set_outgroup(R)
+        print("\nNew tree structure after midpoint rooting:")
+        print(tree)
+        print("\n")
+
     print(f"Searching for leaves containing label: '{args.label}'")
     target_leaves = [leaf for leaf in tree if args.label in leaf.name]
-    
+
     if not target_leaves:
         print(f"No leaves found with label '{args.label}'. Exiting.")
         return
-    
+
     print(f"\nFound {len(target_leaves)} leaves containing '{args.label}'. Finding MRCA...")
     mrca_node = tree.get_common_ancestor(target_leaves)
 
@@ -43,7 +53,7 @@ def main():
     print("\n-------------------------------------------------------------------------")
     print(".  Adding node marks (will append '#1' to node names)                   ")
     print("-------------------------------------------------------------------------")
-    
+
     # Apply marks visually to node names
     for node in tree.traverse():
         if node.node_id in marks:
