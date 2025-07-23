@@ -86,6 +86,6 @@ Process complete.
 
 - The script saves a **Newick file** where:
   - The MRCA and all descendant nodes of the label provided are marked by appending \`#1\`.
-  - The structure of the tree remains unchanged aside from these markings.
+  - The structure of the tree remains unchanged aside from these markings and removing of boostraps.
 
 ---
