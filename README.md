@@ -42,10 +42,10 @@
 
 | Argument | Description                         |
 |----------|-------------------------------------|
-| \-i\     | Path to the input Newick tree file. |
-| \-l\     | Label (substring) to search for.    |
-| \-o\     | Path to the output Newick file.     |
-| \-m\     | Of midpoint rooting needed.         |
+| -i     | Path to the input Newick tree file. |
+| -l     | Label (substring) to search for.    |
+| -o     | Path to the output Newick file.     |
+| -m     | Of midpoint rooting needed.         |
 
 ## ✅ Example Command
 
