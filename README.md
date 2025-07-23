@@ -45,13 +45,15 @@
 | \`-i\`     | Path to the input Newick tree file. |
 | \`-l\`     | Label (substring) to search for.    |
 | \`-o\`     | Path to the output Newick file.     |
+| \`-m\`     | Of midpoint rooting needed.         |
 
 ## ✅ Example Command
 
 ```python3 Mark_newick.py \
     -i Tree.nwk \
     -l red \
-    -o Tree_marked.nwk
+    -o Tree_marked.nwk \
+    -m
 ```
 
 ---
