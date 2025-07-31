@@ -74,12 +74,12 @@ def main():
     marks = list(df_marks['Node_id'])
 
     print("\n-------------------------------------------------------------------------")
-    print(".  Adding node marks (will append '#1' to node names)                   ")
+    print(".  Adding node marks (will append '{test}' to node names)              ")
     print("-------------------------------------------------------------------------")
 
     for node in tree.traverse():
         if id(node) in marks:
-            node.name = f"{node.name} #1" if node.name else "#1"
+            node.name = f"{node.name}{{test}}" if node.name else "{test}"
 
     print(f"Nodes marked: {marks}")
     print("\nMarked tree (Newick with marks):")
