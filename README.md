@@ -4,7 +4,7 @@
 
 ---
 
-## 📦 Features
+## Features
 
 - Load and parse a Newick tree.
 - Search for leaves containing a specific label.
@@ -14,13 +14,13 @@
 
 ---
 
-## ✅ Requirements
+## Requirements
 
 - Python 3.x
 - Dependencies:
   - [`ete3`](http://etetoolkit.org/)
   - `numpy`
-  - `scipy` (✅ Version **>=1.23.5** and **<2.3.0**)
+  - `scipy` (Version **>=1.23.5** and **<2.3.0**)
 
 > ⚠️ If you see:
 > ```
@@ -30,15 +30,15 @@
 
 ---
 
-## 🔧 Installation
+## Installation
 
 ```pip install ete3 numpy scipy==1.11.4```
 
-## 🚀 Usage
+## Usage
 
 ```python3 Mark_newick.py -i <input_tree> -l <label> -o <output_tree>```
 
-## 📌 Arguments
+## Arguments
 
 | Argument | Description                         |
 |----------|-------------------------------------|
@@ -47,7 +47,7 @@
 | -o     | Path to the output Newick file.     |
 | -m     | If midpoint rooting needed.         |
 
-## ✅ Example Command
+## Example Command
 
 ```python3 Mark_newick.py \
     -i Tree.nwk \
@@ -58,7 +58,7 @@
 
 ---
 
-## 📥 Example Output
+## Example Output
 
 ```
 
@@ -82,7 +82,7 @@ Process complete.
 
 ---
 
-## 📤 Output
+## Output
 
 - The script saves a **Newick file** where:
   - The MRCA and all descendant nodes of the label provided are marked by appending \`#1\`.
